@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "obsipub"
+version = "0.1.0"
+description = ""
+authors = ["rishikanthc <r3chandr@ucsd.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+basedpyright = "*"
+pyright = "*"
+ruff = "*"
+pre-commit = "*"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+venvPath = "/Users/rishi/miniconda3/envs"
+venv = "obsipub"
+useLibraryCodeForTypes = true
+typeCheckingMode = "standard"
+reportUnusedImport = "warning"
+reportUnusedVariable = "warning"
+reportDuplicateImport = "error"
+reportPrivateUsage = "warning"
+reportDeprecated = "warning"
+reportInconsistentConstructor = "error"
+reportMissingSuperCall = "error"
+reportUninitializedInstanceVariable = "error"
+reportUnnecessaryCast = "warning"
+reportUnnecessaryComparison = "warning"
+reportImplicitStringConcatenation = "warning"
+diagnosticMode = "openFilesOnly"
